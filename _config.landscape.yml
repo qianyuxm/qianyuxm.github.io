@@ -1,0 +1,37 @@
+menu:
+  首页: /
+  归档: /archives
+  关于: /about
+
+rss:
+banner: images/banner.jpg
+subtitle: 记录学习与生活
+links:
+  github: https://github.com/qianyuxm
+
+excerpt_link: 阅读全文
+fancybox: true
+
+copyright:
+sidebar: right
+widgets:
+  - category
+  - tag
+  - tagcloud
+  - archive
+  - recent_posts
+
+archive_type: monthly
+show_count: true
+recent_posts_limits: 5
+
+google_analytics:
+gauges_analytics:
+favicon:
+twitter:
+fb_admins:
+fb_app_id:
+
+disqus_shortname:
+valine:
+  enable: false

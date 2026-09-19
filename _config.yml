@@ -1,0 +1,79 @@
+# Site
+title: 千屿的博客
+subtitle: 记录学习与生活
+description: qianyuxm 的个人博客，记录技术、学习与生活。
+keywords:
+  - 技术
+  - 学习
+  - 生活
+author: qianyuxm
+language: zh-CN
+timezone: Asia/Shanghai
+
+# URL
+# This is a user/organization Pages repository, so the site is served at "/".
+url: https://qianyuxm.github.io
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+pretty_urls:
+  trailing_index: false
+  trailing_html: false
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :title.md
+default_layout: post
+titlecase: false
+external_link:
+  enable: true
+  field: site
+  exclude: ''
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+syntax_highlighter: highlight.js
+highlight:
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
+
+# Home page
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+
+# Category and tag
+default_category: 未分类
+category_map:
+tag_map:
+
+# Date and time
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+updated_option: mtime
+
+# Pagination
+per_page: 10
+pagination_dir: page
+
+# Theme
+theme: landscape
+
+# Deployment is handled by .github/workflows/pages.yml.
+deploy:
+  type: ''
