@@ -8,7 +8,7 @@ categories:
   - 技术
 ---
 
-这里写正文。
+ggjk
 
 ```bat
 git init 
@@ -18,4 +18,3 @@ git init
 
 正文支持 Markdown。
 
-gkyhuo
