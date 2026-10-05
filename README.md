@@ -1,6 +1,6 @@
 # qianyuxm 的 Hexo 博客
 
-这是部署在 <https://qianyuxm.github.io> 的个人博客，使用 [Hexo](https://hexo.io/zh-cn/) 和官方默认的 [Landscape](https://github.com/hexojs/hexo-theme-landscape) 主题。
+这是部署在 <https://qianyuxm.github.io> 的个人博客，使用 [Hexo](https://hexo.io/zh-cn/) 和现代卡片式的 [Butterfly](https://butterfly.js.org/) 主题。
 
 ## 环境要求
 
@@ -21,7 +21,9 @@ npm ci
 npm run server
 ```
 
-默认访问地址为 <http://localhost:4000>。修改 `_config.yml` 可调整站点名称、作者、描述等基本信息；修改 `_config.landscape.yml` 可调整导航、侧边栏和 Landscape 主题选项。
+默认访问地址为 <http://localhost:4000>。修改 `_config.yml` 可调整站点名称、作者、描述和文章链接等 Hexo 基本信息；修改 `_config.butterfly.yml` 可调整导航、卡片、代码块、深色模式和本地搜索等主题选项。
+
+站内搜索使用构建时生成的本地索引，不需要 Algolia 等外部私密服务。导航中的标签、分类和关于页面分别位于 `source/tags/index.md`、`source/categories/index.md` 和 `source/about/index.md`。
 
 ## 写文章
 
@@ -32,6 +34,19 @@ npm run new -- "文章标题"
 ```
 
 文章会生成到 `source/_posts/`。编辑 Markdown 文件顶部的 `title`、`date`、`categories` 和 `tags` 后即可开始写作。
+
+例如：
+
+```yaml
+---
+title: 文章标题
+date: 2026-09-19 20:00:00
+categories:
+  - 技术
+tags:
+  - Hexo
+---
+```
 
 ## 构建
 
